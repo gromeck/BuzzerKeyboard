@@ -1,0 +1,150 @@
+<html>
+<head>
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Buzzer Keyboard Test Page</title>
+<style>
+* {
+	padding:0;
+	border:0;
+	margin:0;
+	font-family:Roboto,sans-serif,helvetica,Arial;
+}
+html {
+	font-size:2rem;
+}
+body {
+	background-color:#ffffff;
+	color:#000000;
+	padding:1rem;
+}
+h1 {
+	padding-bottom:1rem;
+}
+
+a:link, a:visited {
+	color:black;
+	text-decoration:none;
+}
+a:focus, a:hover, a:active {
+	color:black;
+	//text-decoration:underline;
+}
+
+.button {
+	background:#d0d0d0;
+	padding:0.2rem;
+	padding-left:1rem;
+	padding-right:1rem;
+	margin:0.2rem;
+	color:#808080;
+	font-weight:bold;
+	font-size:2rem;
+	cursor:pointer;
+	display:inline-block;
+	width:3rem;
+	border:2px solid #c0c0c0;
+	border-radius: 1rem;
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+}
+
+.button-pressed {
+	border: 2px solid red;
+	background:red;
+}
+
+.button {
+	background-repeat:no-repeat;
+	background-position:0.5rem center;
+	background-size:1rem 1rem;
+	padding-left:2rem;
+}
+
+.button[accesskey]:after {
+	content:' [' attr(accesskey) ']';
+	font-family:RobotoMono,courier,mono,fixed;
+}
+
+.button[accessKey='j'] {
+	background-image:url('images/bullet-button-red.png');
+}
+
+.button[accessKey='k'] {
+	background-image:url('images/bullet-button-green.png');
+}
+
+.button[accessKey='l'] {
+	background-image:url('images/bullet-button-yellow.png');
+}
+
+.button[accessKey='m'] {
+	background-image:url('images/bullet-button-blue.png');
+}
+
+.button[accessKey='n'] {
+	background-image:url('images/bullet-button-white.png');
+}
+</style>
+<script language="JavaScript" type="text/javascript">
+<!--
+
+function clickedOnPage(event)
+{
+	event = event || window.event;
+	console.log('keycode=' + event.keyCode);
+	return event.keyCode;
+}
+
+function clickedOnButton(button)
+{
+	console.log('clicked ' + button.innerText + ' ...');
+	button.className += ' button-pressed';
+	setTimeout(function(){ button.className = 'button'; }, 500);
+}
+
+-->
+</script>
+
+</head>
+<body onkeydown='clickedOnPage(event)' onload='setupPage()'>
+<h1>Buzzer Keyboard Test Page</h1>
+<a onclick='clickedOnButton(this)' class=button accessKey='0'></a>
+<a onclick='clickedOnButton(this)' class=button accessKey='1'></a>
+<a onclick='clickedOnButton(this)' class=button accessKey='2'></a>
+<a onclick='clickedOnButton(this)' class=button accessKey='3'></a>
+<a onclick='clickedOnButton(this)' class=button accessKey='4'></a>
+<a onclick='clickedOnButton(this)' class=button accessKey='5'></a>
+<a onclick='clickedOnButton(this)' class=button accessKey='6'></a>
+<a onclick='clickedOnButton(this)' class=button accessKey='7'></a>
+<a onclick='clickedOnButton(this)' class=button accessKey='8'></a>
+<a onclick='clickedOnButton(this)' class=button accessKey='9'></a>
+<a onclick='clickedOnButton(this)' class=button accessKey='a'></a>
+<a onclick='clickedOnButton(this)' class=button accessKey='b'></a>
+<a onclick='clickedOnButton(this)' class=button accessKey='c'></a>
+<a onclick='clickedOnButton(this)' class=button accessKey='d'></a>
+<a onclick='clickedOnButton(this)' class=button accessKey='e'></a>
+<a onclick='clickedOnButton(this)' class=button accessKey='f'></a>
+<a onclick='clickedOnButton(this)' class=button accessKey='g'></a>
+<a onclick='clickedOnButton(this)' class=button accessKey='h'></a>
+<a onclick='clickedOnButton(this)' class=button accessKey='i'></a>
+<a onclick='clickedOnButton(this)' class=button accessKey='j'></a>
+<a onclick='clickedOnButton(this)' class=button accessKey='k'></a>
+<a onclick='clickedOnButton(this)' class=button accessKey='l'></a>
+<a onclick='clickedOnButton(this)' class=button accessKey='m'></a>
+<a onclick='clickedOnButton(this)' class=button accessKey='n'></a>
+<a onclick='clickedOnButton(this)' class=button accessKey='o'></a>
+<a onclick='clickedOnButton(this)' class=button accessKey='p'></a>
+<a onclick='clickedOnButton(this)' class=button accessKey='q'></a>
+<a onclick='clickedOnButton(this)' class=button accessKey='r'></a>
+<a onclick='clickedOnButton(this)' class=button accessKey='s'></a>
+<a onclick='clickedOnButton(this)' class=button accessKey='t'></a>
+<a onclick='clickedOnButton(this)' class=button accessKey='u'></a>
+<a onclick='clickedOnButton(this)' class=button accessKey='v'></a>
+<a onclick='clickedOnButton(this)' class=button accessKey='w'></a>
+<a onclick='clickedOnButton(this)' class=button accessKey='x'></a>
+<a onclick='clickedOnButton(this)' class=button accessKey='y'></a>
+<a onclick='clickedOnButton(this)' class=button accessKey='z'></a>
+</body>
+</html>
