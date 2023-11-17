@@ -35,7 +35,7 @@ The requirements for the BuzzerKeyboard are as follows:
   |   D    | blue   | set the keycode modifiers to [ALT]+[CTRL]  |
   |   E    | white  | set the keycode modifiers to [NONE]        |
 
-- Whenever an configuration function is changede, the corresponding button should indicate the change by flashing.
+- Whenever an configuration function is changed, the corresponding button should indicate the change by flashing.
 
 # Solution
 
