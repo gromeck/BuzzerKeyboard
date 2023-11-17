@@ -21,11 +21,11 @@ The requirements for the BuzzerKeyboard are as follows:
   |   E    | white  | n       |
 
 - Each button should support an LED which is on during the time the button is pressed.
-- An activity LED should be on permanently. Whenever a keycode is sent, the activity LED should be off for 100ms.
+- An activity LED should be on permanently. Whenever a keycode is sent, the activity LED should indicate this by switching off for a short period.
 - The buttons of the keyboard are named A, B, C, D and E.
 - By pressing the button A for 5 seconds, the configuration mode is enabled.
-- The configuration mode is indicated by a slowly blinking activity LED (500ms on, 500ms off).
-- Inside the configuration menu, the buttons are used as follows:
+- The configuration mode is indicated by a blinking activity LED.
+- In the configuration mode, the buttons are used as follows:
 
   | Button | Color  | Function                                   |
   | :-:    | :-:    |--------------------------------------------|
@@ -35,7 +35,7 @@ The requirements for the BuzzerKeyboard are as follows:
   |   D    | blue   | set the keycode modifiers to [ALT]+[CTRL]  |
   |   E    | white  | set the keycode modifiers to [NONE]        |
 
-- Whenever an configuration function is selected, the activity LED commits that with 5 sequences of quick blinking (5x 100ms on, 100ms off).
+- Whenever an configuration function is changede, the corresponding button should indicate the change by flashing.
 
 # Solution
 
