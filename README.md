@@ -50,6 +50,8 @@ As the BuzzerKeybord sends keycodes in combination with a configurable modifier,
 
 I used push buttons with microswitches. You will find these by searching vor "arcade push button" in your favorite electronic stores.
 
+In the directory Test you will find a <a href=Test/index.html>HTML test code</a>.
+
 # Result
 
 <div style="float:left;"><img src="Resources/Photo-PCB.jpg" width="800px"></div>
