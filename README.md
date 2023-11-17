@@ -1,9 +1,11 @@
 # BuzzerKeyboard
 Arduino-based HID (keyboard) with some big buttons to control e.g. web applications.
 
+<div style="float:left;"><img src="Resources/Photo-BuzzerKeyboard.jpg" width="500px"></div>
+
 # Motivation
-I was looking for a simple solution to trigger functions of a web application (in fact this was https://github.com/gromeck/Turnier)
-by not using a normal keyboard or mouse.
+I was looking for a simple solution to trigger functions of a web application by not using a normal keyboard or mouse.
+My main use case is a badminton tournament sióftware (see https://github.com/gromeck/Turnier).
 
 # Requirements
 The requirements for the BuzzerKeyboard are as follows:
@@ -46,5 +48,9 @@ The Arduino makes use of the Keyboard libraries, which let the Arduino act like 
 
 As the BuzzerKeybord sends keycodes in combination with a configurable modifier, the web application has only to define access keys.
 
+I used push buttons with microswitches. You will find these by searching vor "arcade push button" in your favorite electronic stores.
+
 # Result
 
+<div style="float:left;"><img src="Resources/Photo-PCB.jpg" width="800px"></div>
+<div style="float:left;"><img src="Resources/Photo-BuzzerKeyboard.jpg" width="800px"></div>
